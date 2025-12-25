@@ -1,0 +1,77 @@
+Install GitHub CLI (gh)
+
+sudo apt update
+sudo apt install gh -y
+
+
+Check:
+
+gh --version
+
+
+Start GitHub Login
+
+gh auth login
+
+
+Select Options (exact order)
+
+When prompted, choose:
+
+What account do you want to log into?
+→ GitHub.com
+
+What is your preferred protocol for Git operations?
+→ HTTPS
+
+Authenticate Git with your GitHub credentials?
+→ Yes
+
+How would you like to authenticate GitHub CLI?
+→ Login with a web browser
+
+
+Complete Browser Authentication
+
+Terminal shows a one-time code
+
+Press Enter
+
+Browser opens automatically
+
+Login to GitHub
+
+Enter the code
+
+Click Authorize GitHub
+
+Verify Login Status
+
+gh auth status
+
+
+You should see:
+
+Logged in to github.com as <username>
+
+
+Use GitHub via CLI (After Login)
+
+Create repository:
+
+gh repo create myrepo --public
+
+
+Clone repository:
+
+gh repo clone username/myrepo
+
+
+List repositories:
+
+gh repo list
+
+
+Logout (If Needed)
+
+gh auth logout
